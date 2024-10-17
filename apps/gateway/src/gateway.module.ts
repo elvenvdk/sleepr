@@ -20,9 +20,7 @@ import { authContext } from './auth.context';
             subgraphs: [
               {
                 name: 'reservations',
-                url: configSerivce.getOrThrow(
-                  'http://reservations:3000/graphql',
-                ),
+                url: configSerivce.getOrThrow('RESERVATIONS_GRAPHQL_URL'),
               },
             ],
           }),
